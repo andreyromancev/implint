@@ -1,0 +1,11 @@
+levels:
+  - # Trivial components. External package wrappers, common primitives, primitive tools.
+    - 'db'
+    - 'db/io'
+    - 'http'
+  - # Simple components. Straightforward task components, helpers, connectors.
+    - 'fetcher'
+    - 'saver'
+  - # Business logic. Workers, handlers, complex processing.
+    - 'worker'
+    - 'handler'
