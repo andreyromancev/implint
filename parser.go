@@ -68,6 +68,10 @@ func (pr *Parser) parseDir(dir string) (errs []error) {
 	for _, p := range packages {
 		for filePath, f := range p.Files {
 			for _, i := range f.Imports {
+				if strings.HasPrefix(i.Comment.Text(), "nolint") {
+					continue
+				}
+
 				importDir := import2Dir(i.Path.Value)
 				importLevel, ok := pr.levels[importDir]
 				if !ok {
