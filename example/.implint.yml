@@ -7,6 +7,6 @@ levels:
     - 'fetcher'
     - 'saver'
 
-  - # Trivial components. External package wrappers, common primitives, primitive tools.
+  - # Trivial components. External package wrappers, common primitives, tools.
     - 'db/io'
     - 'http'
